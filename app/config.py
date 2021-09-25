@@ -1,7 +1,5 @@
 import os
 
-from flask_login import config
-
 class Config:
     '''
     General configuration parent class

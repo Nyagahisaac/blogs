@@ -4,7 +4,6 @@ class Config:
     '''
     General configuration parent class
     '''
-
     BLOG_API_URL = 'http://quotes.stormconsultancy.co.uk/quotes.json'
     POPULAR_QUOTE = 'http://quotes.stormconsultancy.co.uk/popular.json'
     SINGLE_QUOTE = ' http://quotes.stormconsultancy.co.uk/quotes/1.json'

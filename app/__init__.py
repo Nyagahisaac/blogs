@@ -13,6 +13,7 @@ login_manager.session_protection = 'strong'
 login_manager.login_view = 'auth.login'
 
 
+
 #Initialising Flask Bootstrap
 bootstrap = Bootstrap()
 #initialising database

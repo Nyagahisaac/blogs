@@ -1,0 +1,33 @@
+import os
+
+class Config:
+    '''
+    General configuration parent class
+    '''
+
+    BLOG_API_URL = 'http://quotes.stormconsultancy.co.uk/quotes.json'
+    POPULAR_QUOTE = 'http://quotes.stormconsultancy.co.uk/popular.json'
+    SINGLE_QUOTE = ' http://quotes.stormconsultancy.co.uk/quotes/1.json'
+    SECRET_KEY = 'test12345'
+
+
+class ProdConfig(Config):
+    '''
+    Production  configuration child class
+
+    Args:
+        Config: The parent configuration class with General configuration settings
+    '''
+    pass
+
+
+class DevConfig(Config):
+    '''
+    Development  configuration child class
+
+    Args:
+        Config: The parent configuration class with General configuration settings
+    '''
+
+    DEBUG = True
+

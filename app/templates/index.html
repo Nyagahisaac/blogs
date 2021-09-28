@@ -1,68 +1,13 @@
-<!DOCTYPE html>
-{% import 'bootstrap/wtf.html' as wtf%}
-<!-- {% extends 'base.html' %} -->
-
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    {% if title %}
-    <title>{{ title }}</title>
-    {% else %}
-    <title>Welcome to Blog App</title>
-    {% endif %}
-</head>
-<style>
-    nav {
-        display: flex;
-        justify-content: space-between;
-        background-color: rgb(4, 4, 54)transparent;
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-</style>
-
-<body>
-    <nav>
-        <a href="#" style="font-weight: bolder; font-size: 30px;">Blog App</a>
-        <ul>
-        }
-    
-        ul {
-            padding-left: 20px;
-        }
-    </style>
-    
-    <body>
-        <nav>
-            <div class="btn">
-                <a href="{{url_for('auth.login')}}">
-                    <button class="btn btn-outline-primary  " style="border-radius: 10px;">Sign In</button>
-                </a>
-
-            </div>
-
-            <div class="btn">
-                <a href="{{url_for('auth.logout')}}">
-                    <button class="btn btn-primary " style="border-radius: 10px;font-weight: bold;">Sign
-                        Out</button>
-                </a>
-
-            </div>
-        </ul>
-    </nav>
-
-
-</body>
-
-</html>
+{% extends 'base.html' %}{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}" type="text/css">
+{% endblock styles%}
+<!-- Content block -->
+{% block content %}
+<div class="container text-center">
+    <img src="{{url_for('static', filename='images/page.jpg')}}" />
+    <div class="text-content">
+        
+    </div>
+</div>
+{% endblock %}

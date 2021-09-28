@@ -20,6 +20,7 @@ def index():
     '''
 
     title = 'Home- Welcome to Blog App'
+    message = "dhfihdbihjbf hbjfmn"
     return render_template('index.html', title = title)
 
 @main.route('/quotes')

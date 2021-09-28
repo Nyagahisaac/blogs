@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% import 'bootstrap/wtf.html' as wtf%}
+<!-- {% extends 'base.html' %} -->
 
 <html lang="en">
 
@@ -7,12 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/type.css')}}">
-    <link href="{{url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,6 +36,15 @@
     <nav>
         <a href="#" style="font-weight: bolder; font-size: 30px;">Blog App</a>
         <ul>
+        }
+    
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+    
+    <body>
+        <nav>
             <div class="btn">
                 <a href="{{url_for('auth.login')}}">
                     <button class="btn btn-outline-primary  " style="border-radius: 10px;">Sign In</button>
@@ -56,6 +61,8 @@
             </div>
         </ul>
     </nav>
+
+
 </body>
 
 </html>

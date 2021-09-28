@@ -2,36 +2,34 @@
 {% import 'bootstrap/wtf.html' as wtf%}
 
 {% block content %}
+
 <body>
-<div class="container">
-    <style>
-        .register{
-        color: blue;
-        font-size: 20px;
-        margin-bottom: 100px;
+    <div class="container">
+        <style>
+            .register {
+                color: blue;
+                font-size: 20px;
+                margin-bottom: 100px;
 
-        }
-    
-
-
-    </style>
-    <div class="row">
-        <div class="col-md-2"> </div>
-        <div class="col-md-8 card register mb-5 ">
-            <p style="margin-bottom: 70px;">
+            }
+        </style>
+        <div class="row">
+            <div class="col-md-2"> </div>
+            <div class="col-md-8 card register mb-5 ">
+                <p style="margin-bottom: 70px;">
                 <h1></h1>
 
                 {{wtf.quick_form(registration_form)}}
-            </p>
+                </p>
 
 
+
+            </div>
+            <div class="col-md-2"></div>
 
         </div>
-        <div class="col-md-2"></div>
-    
     </div>
-</div>
 
-    
+
 </body>
 {% endblock%}

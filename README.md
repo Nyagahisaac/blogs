@@ -2,14 +2,17 @@
 
 # Author
 * Nyagah isaaac
+# Live link
+[bloggworld.herokuapp.com/]
+
 # Description
 
 An application that allows users to use that one minute wisely. The users will submit their one minute blogs and other users will view them and leave comments to give their feedback on them.
-User Stories
+#User Stories
 
 ## These are the behaviours/features that the application implements for use by a user.
 
-## As a user I would like to:
+### As a user I would like to:
 
    * View the blog posts submitted.
    * Comment on blog posts.
@@ -21,7 +24,7 @@ User Stories
 
 ## These are the behaviours/features that the application implements for use by the writter/Blogger
 
-Bloggers would like to:
+### Bloggers would like to:
 
     Sign in to the blog application
     Create a blog from the application

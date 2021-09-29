@@ -3,7 +3,7 @@
 # Author
 * Nyagah isaaac
 # Live link
-  https://blogg-world.herokuapp.com/ ]
+ [https://blogy-world.herokuapp.com/ ]
 
 # Description
 
